@@ -37,4 +37,8 @@ Finally implemented parser generator for LL1 languages
     * Tested on Arithmetical expressions language
 
 ## Algorithms and Data structures and other university courses
-[Repository](https://github.com/Dkuriab/ITMO-Computer_Science_and_Programming)
+  - [Repository](https://github.com/Dkuriab/ITMO-Computer_Science_and_Programming)
+
+## Bash Scripts
+Linux and Windows study project
+  - [Repository](https://github.com/Dkuriab/OS-lite)
