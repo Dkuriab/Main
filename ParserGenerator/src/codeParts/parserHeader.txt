@@ -1,0 +1,14 @@
+public class Parser {
+    private final LexicalAnalyzer tokens;
+    private Token token;
+
+    private void nextToken() {
+        tokens.nextToken();
+        token = tokens.getToken();
+    }
+
+    public Parser(LexicalAnalyzer tokens) {
+        this.tokens = tokens;
+        nextToken();
+    }
+

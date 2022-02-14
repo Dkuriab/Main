@@ -1,0 +1,47 @@
+grammar math;
+
+expr() -> [int val] ::
+	term() exprS(term.val) {$val = exprS.val;}
+	;
+
+exprS(int acc) -> [int val] ::
+	PLUS term() {$val = acc + term.val;} exprS($val) {$val = exprS.val;}
+	| MINUS term() {$val = acc - term.val;} exprS($val) {$val = exprS.val;}
+	| ε {$val = acc;}
+	;
+
+term() -> [int val] ::
+	power() termS(power.val) {$val = termS.val;}
+	;
+
+termS(int acc) -> [int val] ::
+	MUL power() {$val = acc * power.val;} termS($val) {$val = termS.val;}
+	| DIV power() {$val = acc / power.val;} termS($val) {$val = termS.val;}
+	| ε {$val = acc;}
+	;
+
+power() -> [int val] ::
+	factor() powerS(factor.val) {$val = powerS.val;}
+	;
+
+powerS(int acc) -> [int val] :: POW  power() {$val = (int) Math.pow(acc, power.val);}
+	| ε {$val = acc;} ;
+
+factor() -> [int val] ::
+	SQR factor() {$val = factor.val * factor.val;}
+	| NUM {$val = Integer.parseInt(NUM);}
+	| OPEN expr() CLOSE {$val = expr.val;}
+	| MINUS factor() {$val = (-1) * factor.val;}
+	;
+
+POW: "\\*\\*";
+PLUS: "\\+";
+MINUS: "-";
+MUL: "\\*";
+DIV: "/";
+SQR: "sqr";
+NUM: "[0-9]+";
+OPEN: "\\(";
+CLOSE: "\\)";
+
+

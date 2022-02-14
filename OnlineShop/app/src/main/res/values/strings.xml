@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OnlineShop</string>
+    <string name="shop">Shop</string>
+    <string name="settings">Settings</string>
+    <string name="products">Products</string>
+    <string name="history">History</string>
+    <string name="item_added_to_cart">Item added to cart</string>
+    <string name="cart">Cart</string>
+    <string name="product_image_preview">Product image preview</string>
+    <string name="price">Price</string>
+    <string name="product_name">Product name</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="buy">Buy</string>
+    <string name="ok">OK</string>
+    <string name="login">Login</string>
+    <string name="your_login_message">Your login</string>
+    <string name="your_password_message">Your password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="repeat_your_password_message">Repeat your password</string>
+    <string name="your_email_message">Your email</string>
+    <string name="do_not_have_an_account_message">Don\'t have an account?</string>
+    <string name="create">Create</string>
+</resources>

@@ -1,0 +1,10 @@
+    private final Pattern pattern;
+
+    TypeToken (String regexp) {
+        this.pattern = Pattern.compile(regexp);
+    }
+
+    public boolean match(String text) {
+        return pattern.matcher(text).matches();
+    }
+}

@@ -1,0 +1,5 @@
+	        default ->
+	            throw new ParseException("No valid token: " + token.text());
+	    }
+	    return answer;
+	}

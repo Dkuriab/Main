@@ -1,0 +1,133 @@
+digraph regexp {
+n0 [label="expr"]
+n0 -> n1
+n1 [label="term"]
+n1 -> n2
+n2 [label="power"]
+n2 -> n3
+n3 [label="factor"]
+n3 -> n4
+n4 [label="("]
+n3 -> n5
+n5 [label="expr"]
+n5 -> n6
+n6 [label="term"]
+n6 -> n7
+n7 [label="power"]
+n7 -> n8
+n8 [label="factor"]
+n8 -> n9
+n9 [label="2"]
+n7 -> n10
+n10 [label="powerS"]
+n10 -> n11
+n11 [label="**"]
+n10 -> n12
+n12 [label="power"]
+n12 -> n13
+n13 [label="factor"]
+n13 -> n14
+n14 [label="sqr"]
+n13 -> n15
+n15 [label="factor"]
+n15 -> n16
+n16 [label="("]
+n15 -> n17
+n17 [label="expr"]
+n17 -> n18
+n18 [label="term"]
+n18 -> n19
+n19 [label="power"]
+n19 -> n20
+n20 [label="factor"]
+n20 -> n21
+n21 [label="2"]
+n19 -> n22
+n22 [label="powerS"]
+n22 -> n23
+n23 [label="eps"]
+n18 -> n24
+n24 [label="termS"]
+n24 -> n25
+n25 [label="eps"]
+n17 -> n26
+n26 [label="exprS"]
+n26 -> n27
+n27 [label="+"]
+n26 -> n28
+n28 [label="term"]
+n28 -> n29
+n29 [label="power"]
+n29 -> n30
+n30 [label="factor"]
+n30 -> n31
+n31 [label="sqr"]
+n30 -> n32
+n32 [label="factor"]
+n32 -> n33
+n33 [label="("]
+n32 -> n34
+n34 [label="expr"]
+n34 -> n35
+n35 [label="term"]
+n35 -> n36
+n36 [label="power"]
+n36 -> n37
+n37 [label="factor"]
+n37 -> n38
+n38 [label="1"]
+n36 -> n39
+n39 [label="powerS"]
+n39 -> n40
+n40 [label="eps"]
+n35 -> n41
+n41 [label="termS"]
+n41 -> n42
+n42 [label="eps"]
+n34 -> n43
+n43 [label="exprS"]
+n43 -> n44
+n44 [label="eps"]
+n32 -> n45
+n45 [label=")"]
+n29 -> n46
+n46 [label="powerS"]
+n46 -> n47
+n47 [label="eps"]
+n28 -> n48
+n48 [label="termS"]
+n48 -> n49
+n49 [label="eps"]
+n26 -> n50
+n50 [label="exprS"]
+n50 -> n51
+n51 [label="eps"]
+n15 -> n52
+n52 [label=")"]
+n12 -> n53
+n53 [label="powerS"]
+n53 -> n54
+n54 [label="eps"]
+n6 -> n55
+n55 [label="termS"]
+n55 -> n56
+n56 [label="eps"]
+n5 -> n57
+n57 [label="exprS"]
+n57 -> n58
+n58 [label="eps"]
+n3 -> n59
+n59 [label=")"]
+n2 -> n60
+n60 [label="powerS"]
+n60 -> n61
+n61 [label="eps"]
+n1 -> n62
+n62 [label="termS"]
+n62 -> n63
+n63 [label="eps"]
+n0 -> n64
+n64 [label="exprS"]
+n64 -> n65
+n65 [label="eps"]
+}

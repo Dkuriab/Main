@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "15B451CE271724EA004BEF0A"
+               BuildableName = "ios-itmo-2021-assignment-2.app"
+               BlueprintName = "ios-itmo-2021-assignment-2"
+               ReferencedContainer = "container:ios-itmo-2021-assignment-2.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "15B451CE271724EA004BEF0A"
+            BuildableName = "ios-itmo-2021-assignment-2.app"
+            BlueprintName = "ios-itmo-2021-assignment-2"
+            ReferencedContainer = "container:ios-itmo-2021-assignment-2.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
