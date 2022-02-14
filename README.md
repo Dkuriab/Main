@@ -35,3 +35,6 @@ Finally implemented parser generator for LL1 languages
     * Immplemented language for describing your language grammatics with inner and inherited variables
     * Implemented Tree visualisation
     * Tested on Arithmetical expressions language
+
+## Algorithms and Data structures and other university courses
+[Repository](https://github.com/Dkuriab/ITMO-Computer_Science_and_Programming)
